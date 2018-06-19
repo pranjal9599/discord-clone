@@ -6,17 +6,13 @@ import {
   StyleSheet,
 } from 'react-native';
 
+import { createStackNavigator } from 'react-navigation';
+
 import Header from './Header';
 import Chat from './Chat';
 
 const MainChat = () => (
   <View style={styles.container}>
-    <StatusBar 
-        translucent={true}
-        backgroundColor="rgba(0,0,0,.4)"
-        barStyle="light-content"
-      />
-      <Header title="#lolis"/>
       <Chat />
   </View>
 
@@ -36,5 +32,10 @@ const styles = StyleSheet.create({
 })
 
 
-export default MainChat;
+export default createStackNavigator({
+  MainChat: {
+    screen: MainChat,
+    navigationOptions: {header: Header}
+  }
+})
 

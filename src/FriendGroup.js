@@ -12,8 +12,8 @@ import UserImg from './walll.jpg';
 
 const { width, height } = Dimensions.get("window");
 
-const FriendGroup = ({ user, playing, status }) => (
-    <TouchableOpacity style={ styles.tabContainer } >
+const FriendGroup = ({ user, playing, status, navigation }) => (
+    <TouchableOpacity style={ styles.tabContainer } onPress={ navigation.navigate('ServerChat') }>
         <View style={{ padding: 10 }}>
             <Image 
                 source={ UserImg }

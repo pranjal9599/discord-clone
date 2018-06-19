@@ -12,9 +12,9 @@ class All extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <FriendGroup user="Mr.Omniverse" playing="with lolis" status="online" />
-                <FriendGroup user="ZUCC" playing="with self" status="busy" />
-                <FriendGroup user="Mac" playing="League of Legends" status="away" />
+                <FriendGroup user="Mr.Omniverse" playing="vs code" status="online" navigation={this.props.navigation}/>
+                <FriendGroup user="ZUCC" playing="Dota 2" status="busy" navigation={this.props.navigation}/>
+                <FriendGroup user="Mac" playing="Spotify" status="away" navigation={this.props.navigation}/>
             </View>
         )
     }
@@ -25,7 +25,6 @@ class Online extends React.Component {
     render() {
         return (
         <View style={styles.container}>
-            <FriendGroup user="Mr.Omniverse" playing="with lolis" status="online" />
         </View>
         )
     }

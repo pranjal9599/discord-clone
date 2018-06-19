@@ -46,25 +46,25 @@ const Chat = () => (
     <View style={{ flex: 1}}>
         <ScrollView style={styles.chatScroll}>
             <ChatItem username="ZUCC" msg="HAHAHAHHAHAHH!!" />
-            <ChatItem username="lol" msg="lul wut!!" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
-            <ChatItem username="kkk" msg="im wet" />
+            <ChatItem username="mick" msg="lol what!!" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
+            <ChatItem username="lol" msg="hey" />
         </ScrollView>
         <View style={styles.sendMsg}>
             <View style={{ flex: 1}}>
                 <Icon name="attachment" size={15} color="#fff" style={styles.icon} />
             </View>
             <View style={{ flex: 7 }}>
-                <Text style={ styles.send }>Message #loli</Text>
+                <Text style={ styles.send }>Message #general</Text>
             </View>
             <View style={{ flex: 2, flexDirection: "row", justifyContent: "flex-end"}}>
                 <Icon name="emoji-happy" size={15} color="#fff" style={styles.icon} />

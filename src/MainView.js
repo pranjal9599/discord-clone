@@ -7,33 +7,35 @@ import {
     StatusBar
 } from 'react-native';
 
-import { createStackNavigator } from 'react-navigation';
+import { 
+    createStackNavigator,
+    createDrawerNavigator
+} from 'react-navigation';
 
 import Header from './Header';
 import Tabs from './Tabs';
-
-// const MainView = () => (
-//     // <View>
-//     //     <StatusBar 
-//     //         translucent={true} 
-//     //         backgroundColor="rgba(0,0,0,0.4)"
-//     //         barStyle="light-content"
-//     //     />
-//     //     {/* <Header title="Friends"/> */}
-//     //     <Tabs />
-//     // </View>
-//     <Tabs>
-//         <Header title="Friends" />
-//     </Tabs>
-// );
-
-// export default MainView;
+import SideMenu from './SideMenu';
+import MainChat from './MainChat';
 
 
-
-export default createStackNavigator({
+const MainView = createStackNavigator({
     MyTab: {
         screen: Tabs,
         navigationOptions: {header : Header}
     }
+});
+
+
+export default createDrawerNavigator({
+    Main: {
+        screen: MainView,
+    },
+    ServerChat: {
+        screen: MainChat
+    }
+}, {
+    contentComponent: ({ navigation }) => (
+        <SideMenu navigation={navigation} />
+    ),
+    drawerWidth: 340
 });
